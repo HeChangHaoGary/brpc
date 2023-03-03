@@ -20,6 +20,7 @@ jobs:
         options: --cc=gcc --cxx=g++
     - name: compile
       run: |
+           free -m
            make -j ${{env.proc_num}}
 
   gcc-compile-with-cmake:
